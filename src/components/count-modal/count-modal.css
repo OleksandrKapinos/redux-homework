@@ -1,0 +1,11 @@
+.App-count {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    margin: 20px auto;
+    border: 1px solid black;
+}
+

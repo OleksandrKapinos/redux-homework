@@ -1,0 +1,26 @@
+.App-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    height: 50px;
+    padding: 20px;
+    color: white;
+}
+
+.App-header_buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    font-size: 24px;
+}
+
+.App-header_buttons button{
+    height: 30px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

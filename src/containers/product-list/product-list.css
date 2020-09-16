@@ -1,0 +1,18 @@
+.App-product_list {
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.App-product_sort-bar {
+    width: 100%;
+    padding: 10px;
+}
+.App-product_sort-bar select, option {
+    font-size: 16px;
+}

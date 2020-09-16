@@ -1,0 +1,26 @@
+.App-new_product-wrapper {
+    display: block;
+    position: fixed;
+    margin: 300px auto;
+}
+
+.App-new_product {
+    width: 300px;
+    padding: 20px 60px;
+}
+
+.App-new_product h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.App-new_product label {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.App-new_product-button_box {
+    display: flex;
+    justify-content: space-around;
+}
