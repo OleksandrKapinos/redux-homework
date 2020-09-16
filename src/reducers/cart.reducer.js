@@ -18,18 +18,7 @@ const cartReducer = (state = initState, action) => {
             return state.inCart;
         case ADD_ITEM_TO_CART:
             let index = state.inCart.find(item => item.id === action.product.id);
-            if (index !== undefined) {
-                return {
-                    ...state,
-                    inCart: state.inCart.map(item => {
-                        item.id === action.product.id
-                        && item.itemQuantity < item.available
-                        && (item.itemQuantity += 1);
-                        return item;
-                    }),
-                    quantity: state.inCart.length
-                };
-            } else {
+            if (index === undefined) {
                 let cartItem = {
                     ...action.product,
                     itemQuantity: 1
@@ -39,6 +28,8 @@ const cartReducer = (state = initState, action) => {
                     inCart: [...state.inCart, cartItem],
                     quantity: state.quantity + 1
                 };
+            } else {
+                return {...state}
             }
         case REMOVE_FROM_CART:
             return {
