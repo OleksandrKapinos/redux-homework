@@ -11,12 +11,5 @@ export const addNewProduct = product => ({type: ADD_NEW_PRODUCT, product});
 export const getSortProductList = sortProperty => ({type: GET_PRODUCT_SORT_BY_PROPERTY, sortProperty});
 
 
-export const getProductsFromAPI = () => (dispatch) => {
-    productsApi.getProducts()
-        .then(response => dispatch(setProductList(response)))
-};
-export const updateProductsToAPI = (products, newProduct) => (dispatch) => {
-    productsApi.updateProducts(products)
-        .then(() => dispatch(addNewProduct(newProduct)))
-};
+
 

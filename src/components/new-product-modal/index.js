@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {connect} from 'react-redux';
 
 import './new-product-modal.css';
-import {updateProductsToAPI} from "../../actions/products.action";
+import {updateProductsToAPI} from "../../actions/products.thunk";
 
 const NewProductModal = (props) => {
     const [productName, setProductName] = useState('');
