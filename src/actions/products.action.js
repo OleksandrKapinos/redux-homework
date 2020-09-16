@@ -1,5 +1,3 @@
-import {productsApi} from "../api/api";
-
 export const GET_PRODUCT_LIST = 'GET_PRODUCT_LIST';
 export const SET_PRODUCT_LIST = 'SET_PRODUCT_LIST';
 export const ADD_NEW_PRODUCT = 'ADD_NEW_PRODUCT';

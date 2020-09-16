@@ -17,6 +17,5 @@ export const productsApi = {
             }
         })
             .then(response => response.json())
-            .then(response => console.log(response));
     }
 };

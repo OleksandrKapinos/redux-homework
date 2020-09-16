@@ -9,6 +9,7 @@ export const getProductsFromAPI = () => (dispatch) => {
         console.log('Error: ', e);
     }
 };
+
 export const updateProductsToAPI = (products, newProduct) => (dispatch) => {
     try {
         productsApi.updateProducts(products)
